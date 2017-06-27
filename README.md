@@ -3,7 +3,8 @@ processor_cache_C
 
 Reproduce some example of Gallery of Processor Cache Effects in C (see http://igoro.com/archive/gallery-of-processor-cache-effects/)
 
-Note: On an OsX system, one can get the cache sizes by running:
+Note: 
+On an OsX system, one can get the cache sizes by running:
 
 ```sysctl -a | grep cache```
 
@@ -14,6 +15,11 @@ hw.l1icachesize = 32768
 hw.l1dcachesize = 32768
 hw.l2cachesize = 262144
 hw.l3cachesize = 3145728```
+
+On a Linux system, use this command:
+```
+sudo dmidecode -t cache
+```
 
 So L1 cache is 32K, L2 256K and L3 3M
 
