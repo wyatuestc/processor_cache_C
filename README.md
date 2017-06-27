@@ -36,7 +36,7 @@ gcc -Wall -o cache_size cache_size.c -lm
 ```
 and 
 ```
-gcc -Wall -o false_sharing false_sharing.c -lm --lpthread
+gcc -Wall -o false_sharing false_sharing.c -lm -lpthread
 ```
 
 
